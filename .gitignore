@@ -1,3 +1,13 @@
+# Created by .ignore support plugin (hsz.mobi)
+### Example user template template
+### Example user template
+
+# IntelliJ project files
+.idea
+*.iml
+out
+gen
+### Java template
 # Compiled class file
 *.class
 
@@ -21,3 +31,31 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+
+.gitignore
+.idea/$PROJECT_FILE$
+.idea/.gitignore
+.idea/checkstyle-idea.xml
+.idea/compiler.xml
+.idea/encodings.xml
+.idea/inspectionProfiles/
+.idea/jarRepositories.xml
+.idea/junitgenerator-prj-settings.xml
+.idea/libraries/
+.idea/misc.xml
+.idea/modules.xml
+.idea/vcs.xml
+.mvn/wrapper/maven-wrapper.jar
+blog.iml
+src/main/resources/static/
+src/main/resources/templates/
+!/HELP.md
+!/mvnw
+!/mvnw.cmd
+!/.mvn/
+.mvn/wrapper/MavenWrapperDownloader.java
+.mvn/wrapper/maven-wrapper.properties
+
+HELP.md
+mvnw
+mvnw.cmd
