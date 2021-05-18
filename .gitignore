@@ -59,3 +59,5 @@ src/main/resources/templates/
 HELP.md
 mvnw
 mvnw.cmd
+!/blog.ipr
+!/blog.iws
