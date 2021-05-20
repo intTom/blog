@@ -1,3 +1,4 @@
+# 配置数据库,模板引擎用thymeleaf
 spring:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
@@ -6,10 +7,15 @@ spring:
     data-password: 123456
   thymeleaf:
     cache: false  #页面不加载缓存，修改即时生效
+  profiles:
+    active: dev
 
 server:
   port: 8081
 
 mybatis-plus:
   mapper-locations: classpath*:/mapper/**Mapper.xml
-
+  global-config:
+    db-config:
+      logic-delete-value: 1
+      logic-not-delete-value: 0
