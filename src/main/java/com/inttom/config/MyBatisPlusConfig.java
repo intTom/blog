@@ -1,3 +1,4 @@
+/*
 package com.inttom.config;
 
 import com.baomidou.mybatisplus.annotation.DbType;
@@ -20,6 +21,7 @@ public class MyBatisPlusConfig {
         AutoGenerator mpg = new AutoGenerator();
 // 配置策略
 // 1、全局配置
+*/
 /*        GlobalConfig gc = new GlobalConfig();
         String projectPath = System.getProperty("user.dir");
         gc.setOutputDir(projectPath + "/src/main/java");
@@ -30,7 +32,8 @@ public class MyBatisPlusConfig {
         gc.setIdType(IdType.ID_WORKER);
         gc.setDateType(DateType.ONLY_DATE);
         gc.setSwagger2(true);
-        mpg.setGlobalConfig(gc);*/
+        mpg.setGlobalConfig(gc);*//*
+
 //2、设置数据源
         DataSourceConfig dsc = new DataSourceConfig();
         dsc.setUrl("jdbc:mysql://localhost:3306/blog?useSSL=false&useUnicode=true&characterEncoding=utf-8&serverTimezone=GMT%2B8");
@@ -70,3 +73,4 @@ public class MyBatisPlusConfig {
         mpg.execute(); //执行
     }
 }
+*/
