@@ -1,10 +1,13 @@
 spring:
+  #数据库配置
   datasource:  #配置数据库
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://localhost:3306/blog?useUnicode=true&useSSL=false&characterEncoding=utf8&serverTimezone=Asia/Shanghai
     username: root
-#    data-password: 123456
     password: 123456
+    # 使用druid数据源
+    type: com.alibaba.druid.pool.DruidDataSource
+
   thymeleaf:  #模板引擎用thymeleaf
     cache: false  #页面不加载缓存，修改即时生效
 
@@ -13,9 +16,9 @@ spring:
 #  servlet:
 #    context-path: /blog  #设置上下文权限
 
-#mybatis-plus:
-#  mapper-locations: classpath*:/mapper/**Mapper.xml
-#  global-config:
-#    db-config:
-#      logic-delete-value: 1
-#      logic-not-delete-value: 0
+mybatis-plus:
+  mapper-locations: classpath*:/mapper/**Mapper.xml
+  global-config:
+    db-config:
+      logic-delete-value: 1
+      logic-not-delete-value: 0
