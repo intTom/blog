@@ -11,10 +11,10 @@ spring:
   thymeleaf:  #模板引擎用thymeleaf
     cache: false  #页面不加载缓存，修改即时生效
 
-#server:
-#  port: 8080  #设置Spring boot内置的Tomcat启动端口
-#  servlet:
-#    context-path: /blog  #设置上下文权限
+server:
+  port: 8080  #设置Spring boot内置的Tomcat启动端口
+  servlet:
+    context-path: /blog  #设置上下文权限
 
 mybatis-plus:
   mapper-locations: classpath*:/mapper/**Mapper.xml

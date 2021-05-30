@@ -106,6 +106,18 @@
             <groupId>org.freemarker</groupId>
             <artifactId>freemarker</artifactId>
         </dependency>
+
+        <!--swagger2-接口文档工具，用于调试接口数据，有助于前后端开发的协调-->
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
+            <version>2.9.2</version>
+        </dependency>
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger-ui</artifactId>
+            <version>2.9.2</version>
+        </dependency>
     </dependencies>
 
     <build>
@@ -124,21 +136,21 @@
                 </configuration>
             </plugin>
             <!--解决CodeGenerator类报错-->
-<!--            <plugin>
-                <groupId>org.codehaus.mojo</groupId>
-                <artifactId>exec-maven-plugin</artifactId>
-                <version>1.6.0</version>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>java</goal>
-                        </goals>
-                    </execution>
-                </executions>
-                <configuration>
-                    <classpathScope>test</classpathScope>
-                </configuration>
-            </plugin>-->
+            <!--            <plugin>
+                            <groupId>org.codehaus.mojo</groupId>
+                            <artifactId>exec-maven-plugin</artifactId>
+                            <version>1.6.0</version>
+                            <executions>
+                                <execution>
+                                    <goals>
+                                        <goal>java</goal>
+                                    </goals>
+                                </execution>
+                            </executions>
+                            <configuration>
+                                <classpathScope>test</classpathScope>
+                            </configuration>
+                        </plugin>-->
         </plugins>
     </build>
 </project>
