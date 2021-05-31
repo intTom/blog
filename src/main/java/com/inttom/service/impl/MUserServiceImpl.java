@@ -1,8 +1,8 @@
-package com.inttom.user.service.impl;
+package com.inttom.service.impl;
 
-import com.inttom.user.entity.MUser;
-import com.inttom.user.mapper.MUserMapper;
-import com.inttom.user.service.IMUserService;
+import com.inttom.entity.MUser;
+import com.inttom.mapper.MUserMapper;
+import com.inttom.service.IMUserService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;
 
@@ -12,7 +12,7 @@ import org.springframework.stereotype.Service;
  * </p>
  *
  * @author inttom
- * @since 2021-05-30
+ * @since 2021-05-31
  */
 @Service
 public class MUserServiceImpl extends ServiceImpl<MUserMapper, MUser> implements IMUserService {

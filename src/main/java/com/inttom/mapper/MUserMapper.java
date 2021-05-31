@@ -1,6 +1,6 @@
-package com.inttom.user.mapper;
+package com.inttom.mapper;
 
-import com.inttom.user.entity.MUser;
+import com.inttom.entity.MUser;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
 /**
@@ -9,7 +9,7 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
  * </p>
  *
  * @author inttom
- * @since 2021-05-30
+ * @since 2021-05-31
  */
 public interface MUserMapper extends BaseMapper<MUser> {
 

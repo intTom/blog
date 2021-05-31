@@ -155,7 +155,7 @@ public class CodeGenerator {
         tableFills.add(updateTime);
         strategy.setTableFillList(tableFills);
         // 乐观锁
-        strategy.setVersionFieldName("version");strategy.setRestControllerStyle(true);
+        strategy.setVersionFieldName("version");
 
         // 公共父类
         //strategy.setSuperControllerClass("你自己的父类控制器,没有就不用设置!");
