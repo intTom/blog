@@ -65,16 +65,26 @@ public class CodeGenerator {
         gc.setDateType(DateType.ONLY_DATE);
         //实体属性 Swagger2 注解
         gc.setSwagger2(true);
+        //不需要ActiveRecord特性的请改为false
+        gc.setActiveRecord(false);
+        //XML 二级缓存
+        gc.setEnableCache(false);
+        //XML ResultMap
+        gc.setBaseResultMap(true);
+        //XML columList
+        gc.setBaseColumnList(true);
+
         mpg.setGlobalConfig(gc);
 
-        // 数据源配置
+
+        //数据源配置
         DataSourceConfig dsc = new DataSourceConfig();
+        dsc.setDbType(DbType.MYSQL);
         dsc.setUrl("jdbc:mysql://localhost:3306/blog?useUnicode=true&useSSL=false&characterEncoding=utf8&serverTimezone=Asia/Shanghai");
-        // dsc.setSchemaName("public");
         dsc.setDriverName("com.mysql.jdbc.Driver");
         dsc.setUsername("root");
         dsc.setPassword("123456");
-        dsc.setDbType(DbType.MYSQL);
+
         mpg.setDataSource(dsc);
 
         // 包配置
@@ -137,8 +147,9 @@ public class CodeGenerator {
         templateConfig.setXml(null);
         mpg.setTemplate(templateConfig);
 
-        // 策略配置
+        //策略配置
         StrategyConfig strategy = new StrategyConfig();
+        //表名生成策略
         strategy.setNaming(NamingStrategy.underline_to_camel);
         strategy.setColumnNaming(NamingStrategy.underline_to_camel);
         //strategy.setSuperEntityClass("你自己的父类实体,没有就不用设置!");
@@ -166,10 +177,9 @@ public class CodeGenerator {
         strategy.setControllerMappingHyphenStyle(true);
         strategy.setTablePrefix(pc.getModuleName() + "_");
         mpg.setStrategy(strategy);
+
         mpg.setTemplateEngine(new FreemarkerTemplateEngine());
+        //执行生成
         mpg.execute();
     }
 }
-
-
-//dfaflakfafaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
