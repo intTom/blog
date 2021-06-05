@@ -14,7 +14,12 @@ import org.springframework.web.bind.annotation.RestController;
  * @since 2021-06-04
  */
 @RestController
-@RequestMapping("/user/m-user")
+@RequestMapping()
 public class MUserController {
+
+    @RequestMapping("test")
+    public String hello() {
+        return "hello";
+    }
 
 }
