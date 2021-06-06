@@ -17,9 +17,4 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping()
 public class MUserController {
 
-    @RequestMapping("test")
-    public String hello() {
-        return "hello";
-    }
-
 }
