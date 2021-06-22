@@ -8,7 +8,9 @@ class BlogApplicationTests {
 
     @Test
     void contextLoads() {
+
         System.out.println(ladder(11));
+
     }
 
 
