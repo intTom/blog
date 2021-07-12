@@ -14,7 +14,12 @@ import org.springframework.web.bind.annotation.RestController;
  * @since 2021-06-07
  */
 @RestController
-@RequestMapping("/blog/m-blog")
+@RequestMapping
 public class MBlogController {
+
+    @RequestMapping("/hello")
+    public String hello() {
+        return "你好";
+    }
 
 }

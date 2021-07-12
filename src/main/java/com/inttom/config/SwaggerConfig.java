@@ -1,7 +1,7 @@
 package com.inttom.config;
 
+import com.github.xiaoymin.knife4j.spring.annotations.EnableKnife4j;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import springfox.documentation.builders.PathSelectors;
 import springfox.documentation.builders.RequestHandlerSelectors;
@@ -19,7 +19,7 @@ import java.util.ArrayList;
  */
 @Configuration  //说明这是一个配置类
 @EnableSwagger2 // 该注解开启Swagger2的自动配置
-@ComponentScan("com.inttom.*.controller")
+@EnableKnife4j  //开启knife4j的增强功能
 public class SwaggerConfig {
     @Bean
     public Docket docker() {
